@@ -92,7 +92,7 @@ body {
 
 @media (min-width: 320px) and (orientation:landscape) {
   body{
-    background-color: green;
+    /*background-color: green;*/
   }
 }
 
