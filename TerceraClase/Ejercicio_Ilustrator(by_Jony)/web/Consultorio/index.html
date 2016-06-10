@@ -34,7 +34,21 @@
 							<li><a href=""><img src="images/icon-compartir.svg" alt=""></a></li>
 						</ul>
 					</nav>
+					<nav>
+						<ul class="btn-principal">
+							<li><a href="">HISTORIA</a></li>
+							<li><a href="">QUIÉNES SOMOS</a></li>
+							<li><a href="">QUÉ HACEMOS</a></li>
+							<li><a href="">SABÍA USTED?</a></li>
+							<li><a href="">CONTACTO</a></li>
+						</ul>
+					</nav>
 				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row altura-mapa">
+				<div id="map"></div>
 			</div>
 		</div>
 	</header>
@@ -47,5 +61,19 @@
 
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>	
+
+	<script>
+	      var map;
+	      function initMap() {
+	        map = new google.maps.Map(document.getElementById('map'), {
+	          center: {lat: -34.397, lng: 150.644},
+	          zoom: 8
+	        });
+	      }
+	    </script>
+	    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkX0ll53cf82ufJEqEukCh6BZAN1ct4OE
+&callback=initMap"
+	    async defer>
+	</script>
 </body>
 </html>

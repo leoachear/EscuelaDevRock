@@ -4,6 +4,7 @@
 @azul: #004491;
 @celeste: #3881C0;
 @gris: #C8C9C5;
+@gris_menu: #717175;
 
 .azul{color: @azul;}
 .azul-back{background: @azul;}
@@ -11,11 +12,14 @@
 .celeste-back{background: @celeste;}
 .gris{color: @gris;}
 .gris-back{background: @gris;}
+.gris_menu{color: @gris_menu;}
+.gris_menu-back{background: @gris_menu;}
 
 body{
 	font-family: 'source_sans_proregular';
 	font-size: 15px;
 }
+
 header{
 	.btn-superior{
 		float: right;
@@ -44,6 +48,29 @@ header{
 		float: right;
 		li{
 			display: inline-block;
+			a{
+				color: @gris_menu;
+			}
+		}
+	}
+	.btn-principal{
+		font-family: 'source_sans_proregular';
+		font-size: 15px;
+		width: 494px;
+		float: right;
+		border-bottom: 1.5px solid;
+		border-color: @gris_menu;
+		-webkit-padding-start: 0px;
+		li{
+			list-style: none;
+			display: inline-block;
+			margin: 0px 7px;
+			a{
+				color: @gris_menu;
+			}
+		}
+		li:last-child{
+			margin-right: 0px;
 		}
 	}
 }
@@ -54,3 +81,14 @@ footer{
 		background: @celeste;
 	}
 }
+
+.altura-mapa{
+	height: 100%;
+	width: 100%;
+	#map{
+		height: 100%;
+		width: 100%;
+		position: relative;
+	 }	
+}
+

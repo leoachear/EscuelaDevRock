@@ -1,0 +1,5 @@
+02/06/2016
+
+- Configurar plugin para ruta de carpetas.
+
+- Border-botom 1px para la linea de abajo de la navegación principal.
