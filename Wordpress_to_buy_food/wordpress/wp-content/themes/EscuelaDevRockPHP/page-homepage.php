@@ -25,13 +25,16 @@ get_header(); ?>
         <br> <br>
 					<?php the_title('<h1>','</h1>'); ?>
 					<h4 class="text-muted">
-						"El expediente académico no sirve para nada" <br> 
+						<?php echo types_render_field('subtitulo-home'); ?> <br> 
 
 					</h4>
 <h6 style="
     font-size: 11px;
     color: #999;
-">Laszlo Bock, vicepresidente de Recursos Humanos de Google.</h6>					<div class="col-md-2"></div>
+"><?php echo types_render_field('epigrafe-home'); ?></h6>	
+
+
+				<div class="col-md-2"></div>
 					<div class="col-md-8">
             <br>
 						<p><?php the_content(); ?></p>
@@ -40,36 +43,36 @@ get_header(); ?>
 <div class="tarjetas">
 	<div class="col-md-3">
 	<div class="card">
-  <i class="material-icons">&#xE192;</i>
+  <i class="material-icons"><?php echo types_render_field('card-icon-01'); ?></i>
   <div class="card-block">
-    <h4 class="card-title">Cursos rápidos</h4>
-    <p class="card-text">Jornadas de capacitación, intensivas y dedicadas a tecnologías particulares. Desde actualizaciones hasta aprender una tecnología en un día. Ideales para Developers más avanzados</p>
+    <h4 class="card-title"><?php echo types_render_field('card-title-01'); ?></h4>
+    <p class="card-text"><?php echo types_render_field('card-content-01'); ?></p>
   </div>
 </div>
 </div>
 <div class="col-md-3">
 	<div class="card">
-<i class="material-icons">&#xE866;</i>
+<i class="material-icons"><?php echo types_render_field('card-icon-02'); ?></i>
   <div class="card-block">
-    <h4 class="card-title">Certificados</h4>
-    <p class="card-text"> Nuestros certificados representan que el alumno aprendió y comprendió todo el contenido del curso. Estas certificaciones avaladas por el Google Developer Group Río de la Plata.</p>
+    <h4 class="card-title"><?php echo types_render_field('card-title-02'); ?></h4>
+    <p class="card-text"> <?php echo types_render_field('card-content-02'); ?></p>
   </div>
 </div>
 </div>
 <div class="col-md-3">
 	<div class="card">
-<i class="material-icons">&#xE87A;</i>
+<i class="material-icons"><?php echo types_render_field('card-icon-03'); ?></i>
   <div class="card-block">
-    <h4 class="card-title">Salida laboral</h4>
-    <p class="card-text">Sumale skills al CV aprendiendo las tecnologías más buscadas del mercado digital. Nuestros mejores alumnos obtendrán recomendaciones para postulaciones en empresas.</p>
+    <h4 class="card-title"><?php echo types_render_field('card-title-03'); ?></h4>
+    <p class="card-text"><?php echo types_render_field('card-content-03'); ?></p>
   </div>
 </div>
 </div>
 <div class="col-md-3"><div class="card">
-<i class="material-icons">&#xE7FB;</i>
+<i class="material-icons"><?php echo types_render_field('card-icon-04'); ?></i>
   <div class="card-block">
-    <h4 class="card-title">Modalidad</h4>
-    <p class="card-text">Contamos con dos modalidades: Presencial en nuestra escuela u Online desde la comodidad de cualquier lugar. Pudiendo optar entre ambas para todos los cursos.</p>
+    <h4 class="card-title"><?php echo types_render_field('card-title-04'); ?></h4>
+    <p class="card-text"><?php echo types_render_field('card-content-04'); ?></p>
   </div>
 </div></div>
 </div>
